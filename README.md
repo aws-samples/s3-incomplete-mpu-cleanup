@@ -11,7 +11,7 @@ To delete incomplete multipart uploads, S3 lifecycle policies are recommended. H
 
 The solution involves creating a custom rule in AWS Config that regularly checks all S3 buckets in the account using a custom Guard policy. The rule verifies if buckets have a lifecycle policy to abort incomplete multipart uploads. Buckets without this policy are marked as non-compliant in AWS Config. The solution also uses a custom Python and Boto3 SSM document for remediation. The SSM document takes non-compliant buckets from AWS Config and applies a lifecycle policy to abort incomplete multipart uploads after 7 days, while retaining existing lifecycle policies transitioning or expiring objects. The solution also avoids listing buckets that already have a policy to abort incomplete multipart uploads as non-compliant.
 
-![image1](https://github.com/oshobowa/s3-incomplete-mpu-cleanup/assets/157501353/e9ae5e0d-1227-4adf-a9e1-58620c42c021)
+![image1](https://github.com/aws-samples/s3-incomplete-mpu-cleanup/blob/main/image1.png)
 
 ## Prerequisite 
 
