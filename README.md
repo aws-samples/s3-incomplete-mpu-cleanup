@@ -17,7 +17,7 @@ The solution involves creating a custom rule in AWS Config that regularly checks
 
 AWS Config needs to be setup before deploying the CloudFormation template for this solution. For more information, see Setting up [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/1-click-setup.html).
 
-##Implementation
+## Implementation
 
 We will utilize AWS CloudFormation to provision the resources needed for this solution. Specifically, CloudFormation will create an AWS Config custom rule, a Systems Manager remediation document, and an IAM role granting Systems Manager permission to implement an S3 lifecycle policy. The template will also connect the SSM document as a remediation action for the AWS Config rule that was created.
 
