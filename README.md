@@ -34,7 +34,7 @@ git clone https://github.com/aws-samples/s3-incomplete-mpu-cleanup.git
 cd s3-incomplete-mpu-cleanup
 ```
 
-### C) Create a satck deploy solution
+### C) Create a stack to deploy solution
 ```
 aws cloudformation create-stack \
 	--stack-name S3-MPU-Delete \
