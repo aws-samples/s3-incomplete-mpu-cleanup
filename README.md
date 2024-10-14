@@ -1,3 +1,5 @@
+**Author: Olajide Shobowale**
+
 # Amazon S3 Incomplete Multipart Upload cleanup
 
 ## Amazon Multipart Upload
